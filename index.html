@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSAR Consultancy (K) Ltd</title>
+    
+    <!-- Link to Logo as Favicon -->
+    <link rel="icon" type="image/png" href="https://github.com/ecodes-ltd/AUSAR-Consultancy/raw/main/AUSAR%20Logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f7fc;
+    line-height: 1.6;
+}
+
+/* Smooth Page Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Preloader with Animated Gradient Background */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0044cc, #ffcc00, #ffffff, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Animated Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Preloader with Animated Gradient Background */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0044cc, #ffcc00, #ffffff, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+    text-align: center; /* Ensure text and elements are centered */
+}
+
+/* Animated Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Preloader with Animated Gradient Background */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0044cc, #ffcc00, #ffffff, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+    text-align: center;
+    padding: 20px; /* Added padding to prevent overlap */
+    box-sizing: border-box;
+}
+
+/* Animated Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Preloader Content Centering */
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Logo Image */
+@keyframes fadeInOut {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.spinner {
+    width: 120px;
+    height: auto;
+    max-width: 80vw;
+    max-height: 40vh;
+    object-fit: contain;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+
+/* Loading Text with Blinking Effect */
+.loading-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    white-space: nowrap; /* Prevents text from wrapping awkwardly */
+}
+
+/* Blinking Dots */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.dots {
+    display: inline-block;
+    animation: blink 1.5s infinite;
+}
+
+/* Spinning Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Fade Out Effect */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Remove Loader Completely */
+#loader.removed {
+    display: none;
+}
+
+/* Responsive Fix for Mobile Devices */
+@media (max-width: 600px) {
+    .spinner {
+        width: 70px; /* Smaller logo */
+        max-width: 70vw;
+        max-height: 30vh;
+    }
+    .loading-text {
+        font-size: 16px; /* Adjust font size */
+    }
+    .loader-content {
+        max-width: 85vw;
+    }
+}
+
+
+/* Services Grid */
+.services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service {
+            background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        }
+        .service:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* YouTube Video Wrapper */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive YouTube Video */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none !important; /* Ensure no border */
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header with Logo */
+header {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-container img {
+    width: 180px;
+    max-width: 100%;
+}
+
+/* Navigation Bar */
+nav {
+    background: #004466;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background: #004466;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+/* Menu Items */
+nav ul li {
+    margin: 0;
+    padding: 10px 20px;
+    position: relative;
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+/* Separator Line Between Items */
+nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -2px; /* Position closer */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.7); /* Light separator */
+    opacity: 1; /* Ensure full visibility */
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+/* Hover Effect */
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Mobile-Friendly Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; /* Ensures items wrap on small screens */
+    }
+
+    nav ul li {
+        padding: 8px 15px;
+    }
+
+    nav ul li:not(:last-child)::after {
+        height: 15px; /* Reduce separator size */
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #004466;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ffcc00;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Stylish Buttons */
+.button {
+    display: inline-block;
+    background: #004466;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background: #ffcc00;
+    color: #004466;
+    transform: scale(1.05);
+}
+
+/* Services Grid */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+/* Key Differentiators Section */
+#differentiators {
+    background: linear-gradient(135deg, #004466, #0088aa);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: 40px auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSection 1s ease-in-out forwards;
+}
+
+/* Section Title */
+#differentiators h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: white; /* Ensuring color is applied */
+}
+
+/* Ordered List with Animation */
+#differentiators ol {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 80%;
+    counter-reset: differentiator-counter;
+}
+
+/* List Items with Line-by-Line Animation */
+#differentiators ol li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    counter-increment: differentiator-counter;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInItem 0.8s ease-in-out forwards;
+}
+
+/* Apply a Delay for Each Line Animation */
+#differentiators ol li:nth-child(1) { animation-delay: 0.5s; }
+#differentiators ol li:nth-child(2) { animation-delay: 1s; }
+#differentiators ol li:nth-child(3) { animation-delay: 1.5s; }
+#differentiators ol li:nth-child(4) { animation-delay: 2s; }
+#differentiators ol li:nth-child(5) { animation-delay: 2.5s; }
+
+/* Correct Numbering */
+#differentiators ol li::before {
+    content: counter(differentiator-counter) ".";
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-right: 15px;
+}
+
+/* Quote */
+#differentiators p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 25px;
+    color: #ffcc00;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInText 1s ease-in-out forwards 3s;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #differentiators {
+        padding: 40px 15px;
+    }
+    #differentiators h2 {
+        font-size: 24px;
+    }
+    #differentiators ol {
+        max-width: 100%;
+    }
+    #differentiators ol li {
+        font-size: 16px;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Team Section */
+#team {
+    background: linear-gradient(135deg, #004466, #0088aa);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px; /* Compact container */
+    margin: 40px auto;
+}
+
+/* Section Title */
+#team h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: white;
+}
+
+/* Team Grid */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Individual Team Member */
+.team-member {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Profile Image */
+.team-member img {
+    width: 120px; /* Adjust size */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Team Member Name */
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+/* Role */
+.team-member h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4f4f4;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.team-member p {
+    font-size: 14px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #team {
+        padding: 30px 15px;
+    }
+    .team-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .team-member {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+/* Contact Section */
+#contact {
+    background: #004466;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-top: 4px solid #ffcc00;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: #004466;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile Navigation */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #004466;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjust Section Padding for Small Screens */
+    section {
+        padding: 60px 20px;
+    }
+
+    /* Grid Adjustments */
+    .services-container, .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Logo */
+    .logo-container img {
+        width: 140px;
+    }
+}
+.info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #0056b3, #00a6ff);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .info-box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.5s ease-in-out;
+        }
+        .info-box:hover::after {
+            left: 100%;
+        }
+        .info-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        .core-values ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .core-values li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        @media (max-width: 768px) {
+            .info-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+/* Clients Section */
+#clients {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+#clients h2 {
+    color: #004466;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#clients p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Client Boxes */
+.client-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 200px;
+}
+
+.client-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.client-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Client Text */
+.client-box p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #004466;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .client-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .client-box {
+        width: 150px;
+        padding: 15px;
+    }
+    .client-box img {
+        width: 60px;
+        height: 60px;
+    }
+    .client-box p {
+        font-size: 14px;
+    }
+}
+* Contact Section - Smaller, Balanced */
+#contact {
+    text-align: center;
+    padding: 30px 20px; /* Reduced padding */
+    background: #004466;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Contact Title */
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffcc00;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 8px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Delay animations for smooth appearance */
+.contact-info p:nth-child(1) { animation-delay: 0.3s; }
+.contact-info p:nth-child(2) { animation-delay: 0.5s; }
+.contact-info p:nth-child(3) { animation-delay: 0.7s; }
+.contact-info p:nth-child(4) { animation-delay: 0.9s; }
+.contact-info p:nth-child(5) { animation-delay: 1.1s; }
+
+/* Contact Links */
+.contact-info a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ffcc00;
+}
+
+/* Icons */
+.contact-info i {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #002233;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile-Friendly */
+@media screen and (max-width: 600px) {
+    #contact p {
+        font-size: 14px;
+    }
+	/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    animation: heartbeat 1.5s infinite ease-in-out;
+    z-index: 1000;
+}
+
+/* WhatsApp Icon */
+.whatsapp-float i {
+    font-size: 32px;
+}
+
+/* Hover Effect */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .whatsapp-float i {
+        font-size: 26px;
+    }
+}
+
+    footer {
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+<body>
+
+    <!-- Page Loader -->
+ <div id="loader">
+    <div class="loader-content">
+        <img class="spinner" src="https://github.com/ecodes-ltd/AUSAR-Consultancy/raw/main/AUSAR%20Logo.png" alt="AUSAR Logo">
+        <div class="loading-text">Loading<span class="dots">...</span></div>
+    </div>
+</div>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="https://github.com/ecodes-ltd/AUSAR-Consultancy/raw/main/AUSAR%20Logo.png" alt="AUSAR Logo">
+		<a href="#about"></a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+       <nav>
+        <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- Hero Section with Video -->
+    <section class="hero">
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/-SUULhIhfeU?autoplay=1&mute=1&loop=1&playlist=-SUULhIhfeU" 
+            allowfullscreen>
+        </iframe>
+    </div>
+   </section>
+
+    <section id="about">
+        <h2>ABOUT COMPANY</h2>
+      <p>AUSAR Consultancy (K) Ltd is a dynamic and forward-thinking Monitoring Evaluation,
+		Research and Learning (MERL) firm founded to support organizations, institutions and projects in maximizing their impact through robust and innovative monitoring, rigorous 
+evaluation, and data-driven decision-making. As a newly established firm, we are 
+dedicated to delivering innovative 
+and client-centric MERL solutions 
+that empower our clients to excel in 
+their missions.
+        </p>
+    </section>
+
+    <!-- Mission, Vision, Core Values Section -->
+    <section id="info">
+        <h2>Our Mission, Vision & Core Values</h2>
+        <div class="info-container">
+            <div class="info-box mission-statement">
+                <h3>Mission Statement</h3>
+                <p>"At AUSAR Consultancy (K) Ltd our mission is to partner with organizations to enhance their performance, strengthen accountability, and drive positive change through robust monitoring and evaluation practices."</p>
+            </div>
+            <div class="info-box vision">
+                <h3>Vision</h3>
+                <p>To be a global leader in M&E, recognized for our commitment to excellence, innovation, and the advancement of sustainable development.</p>
+            </div>
+            <div class="info-box core-values">
+                <h3>Core Values</h3>
+                <ul>
+                    <li><strong>Excellence:</strong> Delivering high-quality M&E services and continuous improvement.</li>
+                    <li><strong>Integrity:</strong> Upholding ethical standards, transparency, and confidentiality.</li>
+                    <li><strong>Collaboration:</strong> Fostering partnerships for meaningful outcomes.</li>
+                    <li><strong>Innovation:</strong> Leveraging technology for efficient M&E processes.</li>
+                    <li><strong>Client-Centric:</strong> Tailoring services to meet client objectives.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- Core Services Section -->
+    <section id="services">
+        <h2>Core Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Monitoring and Evaluation System Development</h3>
+                <p>We develop customized monitoring and evaluation frameworks that align with organizational objectives and outcomes.</p>
+            </div>
+            <div class="service">
+                <h3>Data Collection and Analysis</h3>
+                <p>We use various data collection methods such as surveys, interviews, and focus groups, combined with advanced analytical techniques.</p>
+            </div>
+            <div class="service">
+                <h3>Project Management Support</h3>
+                <p>Providing technical assistance in project planning, implementation, and monitoring with integrated MERL strategies.</p>
+            </div>
+            <div class="service">
+                <h3>Capacity Building and Training</h3>
+                <p>We offer customized training programs to build organizational capacity in MERL, research, data management, and strategic planning.</p>
+            </div>
+            <div class="service">
+                <h3>Impact Assessments, Research Studies, and Evaluations</h3>
+                <p>Conducting impact assessments using quantitative and qualitative methods for informed decision-making.</p>
+            </div>
+            <div class="service">
+                <h3>Data Quality Assurance</h3>
+                <p>Ensuring data accuracy, reliability, and consistency through systematic validation and verification processes.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="approach">
+        <h2>OUR APPROACH</h2>
+        <p>Adaptability and Effective Methodologies! Our approach is flexible, adaptive, and designed to provide clients with the insights and information needed to make informed decisions and drive continuous improvement.
+        </p>
+    </section>
+
+    <section id="differentiators">
+        <h2>KEY DIFFERENTIATORS</h2>
+        <ol>
+            <li>Innovation: AUSAR Consultancy (K) Ltd embraces emerging technologies and methodologies to provide cutting-edge MERL solutions.
+            </li>
+            <li>Client-Centered Approach: We prioritize client collaboration, flexibility, and responsiveness to meet unique needs and objectives.
+            </li>
+            <li>Fresh Perspective: As a new firm, we bring a fresh perspective, energy, and enthusiasm to our projects.
+            </li>
+            <li>Quality Assurance: We uphold the highest ethical standards and quality assurance processes to ensure reliable results.
+            </li>
+            <li>Agile and Adaptable: We are nimble and ready to adapt to changing project dynamics and client requirements.
+            </li>
+        </ol>
+        <p>"Driving Innovation with Client-Centered Agility and Fresh, Reliable MERL Solutions"
+        </p>
+    </section>
+
+    <section id="team">
+        <h2>MEET THE TEAM</h2>
+        <div class="team-member">
+		<!-- Dorcas Njoki Kariuki (M&E Research Expert) -->
+			<img src="https://raw.githubusercontent.com/ecodes-ltd/AUSAR-Consultancy/main/m%26e%20R%20expert.png" alt="Dorcas Njoki Kariuki">
+
+            <h3>Dorcas Njoki Kariuki</h3>
+            <h4>Monitoring Evaluation Research and Learning Expert</h4>
+            <p>A seasoned Monitoring and Evaluation Specialist with a passion for data-driven impact assessment and continuous improvement. With over six years of experience in the field, Dorcas has successfully led numerous projects, delivering high-quality results for clients.
+            </p>
+        </div>
+        <div class="team-member">
+		<!-- Dr. Stephen Karugu Njuguna (Research Expert) -->
+			<img src="https://raw.githubusercontent.com/ecodes-ltd/AUSAR-Consultancy/main/research%20Expert.png" alt="Dr. Stephen Karugu Njuguna">
+            <h3>Dr. Stephen Karugu Njuguna</h3>
+            <h4>Research Expert</h4>
+            <p>Dr. Njuguna is a seasoned Research Specialist, with a wealth of expertise to the field of research and analysis. With 10 years of experience, Dr. Njuguna has successfully designed and conducted various research studies, providing actionable insights to clients.
+            </p>
+        </div>
+        <div class="team-member">
+		<!-- CPA Martin Muye Munga (Financial Advisor) -->
+			<img src="https://raw.githubusercontent.com/ecodes-ltd/AUSAR-Consultancy/main/financial%20advisor.png" alt="CPA Martin Muye Munga">
+            <h3>CPA Martin Muye Munga</h3>
+            <h4>Financial Advisor</h4>
+            <p>CPA Martin is a dedicated Financial Advisor with a proven track record of expertise in financial management and fiscal responsibility. With 6 years of experience in the field, Martin has provided financial advisory services to numerous organizations, ensuring financial sustainability.
+            </p>
+        </div>
+        <div class="team-member">
+			<img src="https://raw.githubusercontent.com/ecodes-ltd/AUSAR-Consultancy/main/data%20analist.png" alt="Philemon Onyango">
+            <h3>Philemon Onyango</h3>
+			            <h4>Data Analyst</h4>
+            <p>Philemon is a skilled and results-driven Data Analyst with a passion for extracting meaningful insights from complex datasets. With 5 years of hands-on experience in data analysis, Philemon has successfully supported various projects with data-driven solutions.
+            </p>
+        </div>
+        <div class="team-member">
+		<!-- Annica Baum (Peacebuilding Expert) -->
+<img src="https://raw.githubusercontent.com/ecodes-ltd/AUSAR-Consultancy/main/peace%20building%20expert.png" alt="Annica Baum">
+            <h3>Annica Baum</h3>
+            <h4>Peacebuilding Expert and Organizational Development</h4>
+            <p>Annica is a dedicated and compassionate Peacebuilder committed to fostering harmony, reconciliation, and conflict resolution in diverse communities. With a profound understanding of peacebuilding processes and organizational development, Annica has impacted numerous projects positively.
+            </p>
+        </div>
+    </section>
+
+
+   <section id="clients">
+    <h2>OUR CLIENTS</h2>
+    <p>We work with a variety of clients, helping them achieve impactful results through our expertise:</p>
+    <div class="client-grid">
+        <div class="client-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/9424/9424990.png" alt="Government">
+            <p>Government Agencies</p>
+        </div>
+        <div class="client-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/10471/10471396.png" alt="NGO">
+            <p>Non-Profit Organizations</p>
+        </div>
+        <div class="client-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/3208/3208676.png" alt="International Partners">
+            <p>International Development Partners</p>
+        </div>
+        <div class="client-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/8382/8382775.png" alt="Foundation">
+            <p>Foundations</p>
+        </div>
+        <div class="client-box">
+            <img src="https://cdn-icons-png.flaticon.com/128/921/921511.png" alt="Private Sector">
+            <p>Private Sector Entities</p>
+        </div>
+    </div>
+</section>
+
+    <section id="conclusion">
+        <h2>CONCLUSION</h2>
+        <p>AUSAR Consultancy (K) Ltd is your strategic partner in MERL, poised to help you achieve your goals, enhance your impact, and drive change through data. We bring a blend of expertise, innovation, and dedication to every project, ensuring that our clients receive the best possible support and outcomes.
+        </p>
+    </section>
+
+    <section id="contact">
+    <h2>📞 CONTACT US</h2>
+    <div class="contact-info">
+        <p>
+            <a href="tel:+254727101315">
+                <i class="fas fa-phone"></i> +254 (0) 727 101 315
+            </a>
+        </p>
+        <p>
+            <a href="https://wa.me/254727101315" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </p>
+        <p>
+            <a href="mailto:ausarconsultancyltd@gmail.com">
+                <i class="fas fa-envelope"></i> ausarconsultancyltd@gmail.com
+            </a>
+        </p>
+        <p>
+            <i class="fas fa-map-marker-alt"></i> P.O Box 254727101315-80109, Mtwapa (MPost)
+        </p>
+        <p>
+            <i class="fas fa-building"></i> Basiliea II, Bin Ibrahim Building, 2nd Floor, Mtwapa
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 AUSAR Consultancy (K) Ltd. All rights reserved.</p>
+</footer>
+<a href="https://wa.me/254727101315" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+           <script>
+// Smooth Scrolling
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        let loader = document.getElementById("loader");
+        loader.classList.add("hidden");
+
+        // Wait for the transition, then remove it completely
+        setTimeout(() => {
+            loader.classList.add("removed");
+        }, 500);
+    }, 10000); // 10 seconds
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.createElement("div");
+menuToggle.innerHTML = "☰";
+menuToggle.style.cursor = "pointer";
+menuToggle.style.fontSize = "24px";
+menuToggle.style.padding = "10px";
+menuToggle.style.color = "white";
+menuToggle.style.position = "absolute";
+menuToggle.style.top = "10px";
+menuToggle.style.right = "20px";
+menuToggle.style.display = "none";
+
+const nav = document.querySelector("nav ul");
+document.querySelector("nav").appendChild(menuToggle);
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        nav.classList.remove("active");
+        menuToggle.style.display = "none";
+    } else {
+        menuToggle.style.display = "block";
+    }
+});
+
+// Ensure menu is responsive on load
+window.dispatchEvent(new Event("resize"));
+</script>
+</body>
+</html>
